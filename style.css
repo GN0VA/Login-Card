@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+/* --------------------------------------------------------------------------mini reset------------------------------------------------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*---------------------------------------------------------------------------main css---------------------------------------------------------------------------- */
+body {
+    z-index: -5;
+    font-family: "nunito";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: #BAE6FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a17fff'/%3E%3Cstop offset='1' stop-color='%23a17fff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ddf3ff'/%3E%3Cstop offset='1' stop-color='%23ddf3ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffa2ef'/%3E%3Cstop offset='1' stop-color='%23ffa2ef' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23BAE6FF'/%3E%3Cstop offset='1' stop-color='%23BAE6FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF44DF'/%3E%3Cstop offset='1' stop-color='%23FF44DF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.Card-login {
+    border-radius: 10px;
+    box-shadow: 0px 8px 32px 0px rgba(31, 38, 135, 0.37);
+    background-color: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(3px);
+    width: 300px;
+    position: relative;
+    border: 2px solid #ffffff40;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation-name: main;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+.Card-login_head {
+
+    font-size: 15px;
+    display: block;
+}
+
+.Card-login_head hr {
+    width: 83px;
+    border: none;
+    background-color: white;
+    height: 3.5px;
+    border-radius: 50px;
+}
+
+.form-item,
+.form-other-item {
+    padding: 7px 0px;
+
+}
+
+.Card-login input[type="text"],
+.Card-login input[type="Password"] {
+    border-radius: 50px;
+    border: none;
+    width: 285px;
+    height: 35px;
+    opacity: .85;
+    padding-left: 15px;
+    box-shadow: 0px .5px 28px -1px rgba(0, 0, 0, 0.349);
+    background-color: rgba(255, 255, 255, 0.212);
+    backdrop-filter: blur(3px);
+    letter-spacing: .5px;
+    z-index: -1;
+    outline: none;
+    transition: background .35s;
+}
+
+.form-item ::placeholder {
+    color: white;
+
+    font-weight: bold;
+}
+
+.form-other-item button {
+    margin-top: 5px;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+    height: 35px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.37);
+    transition: background .35s;
+}
+
+.form-other-item button:hover {
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+}
+
+.Card-login_foot p {
+    letter-spacing: .3px;
+    display: flex;
+    gap: 2px;
+    padding: 4px;
+
+}
+
+.Card-login_foot a {
+    color: white;
+    font-weight: bold;
+
+}
+
+.Card-login input[type="text"]:focus,
+.Card-login input[type="Password"]:focus {
+    background-color: white;
+    border: none;
+}
+
+/* --------------------------------------------------------------------------External objects------------------------------------------------------------------------------- */
+.box_1 {
+    margin-left: -350px;
+    margin-top: -350px;
+    position: absolute;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.678);
+    box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+    animation-name: box1;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box_2 {
+    margin-left: 400px;
+    margin-top: -200px;
+    position: absolute;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.678);
+    box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+    animation-name: box2;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box_3 {
+    margin-left: -370px;
+    margin-top: 300px;
+    position: absolute;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.678);
+    box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+    animation-name: box3;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box_4 {
+    margin-left: 200px;
+    margin-top: 500px;
+    position: absolute;
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.411);
+    box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.420);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+    animation-name: box4;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box_5 {
+    margin-left: 450px;
+    margin-top: -450px;
+    position: absolute;
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.411);
+    box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.420);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+    animation-name: box3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: cuadrado5;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*-------------------------------------------------------------------------------Animations------------------------------------------------------------------------------------  */
+@keyframes box1 {
+
+    from {
+        margin-top: -370px;
+    }
+
+    to {
+        margin-top: -420px;
+    }
+}
+
+@keyframes box2 {
+    from {
+        margin-top: -150px;
+    }
+
+    to {
+        margin-top: -200px;
+    }
+}
+
+@keyframes box3 {
+    from {
+        margin-top: 280px;
+    }
+
+    to {
+        margin-top: 250px;
+    }
+}
+
+@keyframes box4 {
+    from {
+        margin-top: 520px;
+    }
+
+    to {
+        margin-top: 450px;
+    }
+}
+
+@keyframes box5 {
+    from {
+        margin-top: -420px;
+    }
+
+    to {
+        margin-top: -450px;
+    }
+}
+
+@keyframes main {
+    0% {
+        margin-top: 50px;
+    }
+
+    50% {
+        margin-top: -50px;
+    }
+
+    100% {
+        margin-top: 0px;
+
+    }
+}
